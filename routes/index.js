@@ -35,12 +35,7 @@ router.post('/create', function(req, res) {
             errors += err.errors[key].message;
             errors += ' ';
           }
-
-          console.log(Object.keys(err.errors).length)
-       
-
           if(Object.keys(err.errors).length >= 1 ){
-               console.log(errors)
             req.flash('info', errors);
             res.redirect('/create');
           }else{
@@ -51,7 +46,6 @@ router.post('/create', function(req, res) {
           req.flash('info', 'Your account has been created');
           res.redirect('/');
         }
-
 	  });
 });
 

@@ -1,15 +1,16 @@
 var settings = {
 	db:{
 		// your mongodb address
-		address:'mongodb://localhost:27017/codehives'
+		address:'mongodb://localhost:27017/*****'
 	},
 	cookies:{
-		secret:'playitcat'
+		// change this
+		secret:'********'
 	},
   email:{
   	// used in nodemailer
-    user:'scottwio',
-    pass:'UWdPhbem3T8CCT'
+    user:'******',
+    pass:'******'
   }
 }
 
