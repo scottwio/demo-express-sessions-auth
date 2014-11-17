@@ -10,9 +10,12 @@ var settings = {
   email:{
   	// used in nodemailer
     user:'******',
-    pass:'******'
+    pass:'******',
+    from:'******',
   }
 }
 
-
 module.exports = settings;
+
+
+

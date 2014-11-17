@@ -107,7 +107,7 @@ router.post('/reset/:token', function(req, res) {
       });
       var mailOptions = {
         to: user.email,
-        from: 'contact@scottw.io',
+        from: settings.email.from,
         subject: 'Password Changed',
         text:'emails been changed '
       };
@@ -177,7 +177,7 @@ router.post('/forgot', function(req, res) {
 
         var mailOptions = {
           to: user.email,
-          from: 'passwordreset@scottw.io', // TODO: needs real address
+          from: settings.email.from, // TODO: needs real address
           subject:'Password reset',
           text:'Password reset '+ req.headers.host +'/reset/'+token  
         };
