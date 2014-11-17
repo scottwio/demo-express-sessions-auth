@@ -1,0 +1,12 @@
+<% if(messages.info){ %>
+    <%= messages.info %>
+<% }%>
+
+
+<form name="forgot" action="/forgot" method="post" novalidate>
+    <div>
+        <label>Forgotten Password</label>
+        <input type="text" name="fpassword" ng-model="login.form.fpassword" required />
+    </div>
+    <input type="submit" value="Send">
+</form>

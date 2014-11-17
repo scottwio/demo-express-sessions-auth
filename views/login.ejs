@@ -1,0 +1,21 @@
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<% if(messages.info){ %>
+    <%= messages.info %>
+<% }%>
+    
+
+
+<form name="loginForm" action="" method="post">
+            <div>
+                <label>Email address</label>
+                <input type="text" name="email" ng-model="login.form.email" required />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="text" name="password" ng-model="login.form.password" required />
+            </div>
+            <input type="submit" value="Send">
+            <a href="/forgot">Forgotten password</a>
+        </form>

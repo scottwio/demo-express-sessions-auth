@@ -1,0 +1,16 @@
+<% if(messages.info){ %>
+    <%= messages.info %>
+<% }%>
+
+
+  <form name="reset" method="post" action="" novalidate>
+      <div>
+          <label>Password</label>
+          <input type="text" name="password" ng-model="login.form.password" required />
+      </div>
+      <div>
+          <label>Password confirm</label>
+          <input type="text" name="passwordConfirm" ng-model="login.form.passwordConfirm" required />
+      </div>
+      <input type="submit" value="Send">
+  </form>

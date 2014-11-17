@@ -1,0 +1,32 @@
+<h1><%= title %></h1>
+<% if(messages.info){ %>
+    <%= messages.info %>
+<% }%>
+
+<form name="signupForm" method="post" action="" novalidate>
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" ng-model="signup.form.name" required />
+    </div>
+    <div>
+        <label>Email address</label>
+        <input type="text" name="email" ng-model="signup.form.email" required />
+    </div>
+
+    <div>
+        <label>Confirm email address</label>
+        <input type="text" name="emailConfirm" ng-model="signup.form.emailConfirm" required />
+    </div>
+
+    <div>
+        <label>Password</label>
+        <input type="text" name="password" ng-model="signup.form.password" required />
+    </div>
+
+    <div>
+        <label>Password Confirm</label>
+        <input type="text" name="passwordConfirm" ng-model="signup.form.passwordConfirm" required />
+    </div>
+
+    <input type="submit" value="Send">
+</form>

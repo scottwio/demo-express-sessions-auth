@@ -1,0 +1,10 @@
+
+<%= (!!locals.username)?username:'' %>
+<% if(messages.info){ %>
+    <%= messages.info %>
+<% }%>
+
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<a href="/login">Login</a> | <a href="/create">Create Account</a>
